@@ -1,0 +1,122 @@
+/* Importação da fonte */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+
+/* Estilos globais */
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Estilos do corpo da página */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #2b2929;
+}
+
+.container {
+    margin-top: 10vh;
+    text-align: center;
+    background-color: antiquewhite;
+    border: 1px solid #fff;
+
+    box-shadow: 10px 10px 10px 10px #333;
+}
+
+.container h1 {
+    background-color: rgb(255, 215, 163);
+
+
+    font-weight: bold;
+}
+
+/* Estilos do contêiner principal */
+#list {
+    padding: 10px;
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos do botão "Adicionar" */
+button {
+    cursor: pointer;
+}
+
+#adc {
+    border: 1px solid rgb(105, 197, 255);
+    border-radius: 5px;
+    background-color: rgb(227, 248, 255);
+    color: rgb(105, 197, 255);
+    text-align: center;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+#adc:hover {
+    border: 1px solid rgb(40, 107, 148);
+    border-radius: 5px;
+    background-color: rgb(53, 161, 197);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px;
+}
+
+/* Estilos do campo de entrada de texto */
+input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+/* Estilos do contêiner das tarefas */
+#tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/* Estilos dos itens de tarefa */
+.task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    max-width: 300px;
+}
+
+/* Estilos do rótulo da tarefa */
+.task-item label {
+    word-wrap: break-word;
+    flex: 1;
+    margin-left: 10px;
+}
+
+/* Estilos para tarefas concluídas (rótulo com checkbox marcado) */
+:checked+label {
+    text-decoration: line-through;
+    color: grey;
+}
+
+/* Estilos para o botão "Remover" */
+.button-remove {
+    border: 1px solid rgb(255, 105, 105);
+    border-radius: 5px;
+    background-color: rgb(255, 227, 227);
+    color: rgb(255, 105, 105);
+    text-align: center;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.button-remove:hover {
+    border: 1px solid rgb(165, 66, 66);
+    border-radius: 5px;
+    background-color: rgb(163, 43, 43);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px;
+}
